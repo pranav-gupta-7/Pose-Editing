@@ -77,7 +77,7 @@ print('Changed directory to:', os.getcwd())
 command = [
         'python', 'predict.py',
         '--ckpt', './105000.ckpt', 
-        '--cond_image_path', '/home/manugaur/loco/outputs/grounding_sam_output/masked_rgb.jpg' ,
+        '--cond_image_path', './outputs/grounding_sam_output/masked_rgb.jpg' ,
         '--elevation_in_degree', '0' ,
         '--azimuth_in_degree', azimuth,
         '--radius', '1.0',

@@ -4,7 +4,7 @@ from PIL import Image
 import cv2
 
 def maskout_segmented_obj():
-    path = '/home/manugaur/loco/outputs/grounding_sam_output/'
+    path = './outputs/grounding_sam_output/'
 
     mask_image = Image.open(path + 'mask_image.jpg')
     raw_image = Image.open(path + 'raw_image.jpg')

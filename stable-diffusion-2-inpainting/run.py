@@ -5,8 +5,8 @@ import numpy as np
 import cv2
 
 
-image = Image.open("/home/manugaur/loco/outputs/grounding_sam_output/raw_image.jpg")
-mask_image = Image.open('/home/manugaur/loco/outputs/grounding_sam_output/mask_image.jpg')
+image = Image.open("./outputs/grounding_sam_output/raw_image.jpg")
+mask_image = Image.open('./outputs/grounding_sam_output/mask_image.jpg')
 
 #get size of mask_image
 width, height = mask_image.size
@@ -17,7 +17,7 @@ kernel = np.ones((5, 5), np.uint8)
 mask_image = cv2.dilate(mask_image, kernel, iterations=5) 
 mask_image[np.where(mask_image != 0)] = 255
 mask_image = Image.fromarray(mask_image.astype(np.uint8))
-mask_image.save('/home/manugaur/loco/outputs/inpainting/mask_image.jpg')
+mask_image.save('./outputs/inpainting/mask_image.jpg')
 
 prompt = ""
 
@@ -34,4 +34,4 @@ image = pipe(prompt='', image=image, mask_image=mask_image).images[0]
 
 image = image.resize((width, height))
 
-image.save("/home/manugaur/loco/outputs/inpainting/rbg_image_obj_removed.jpg")
+image.save("./outputs/inpainting/rbg_image_obj_removed.jpg")
