@@ -22,13 +22,13 @@ pip install -r requirements.txt
 **Clone the GroundedSAM and Zero123 repositories into the specified directories within this project:**
 
 ```
-git clone <GroundedSAM-Repository-URL> GroundedSAM
-git clone <Zero123-Repository-URL> Zero123
+git clone https://github.com/IDEA-Research/Grounded-Segment-Anything.git
+git https://github.com/cvlab-columbia/zero123.git
 ```
 
 Note: 
-- After cloning GroundedSAM replace the original "grounded_sam_demo.py" with "files_to_replace/grounded_sam_demo.py" from this repository.
-- After cloning Zero123 copy the "files_to_replace/predict.py" to "zero123/zero123" directory.
+- After cloning GroundedSAM replace the original ***"grounded_sam_demo.py"*** with ***"files_to_replace/grounded_sam_demo.py"*** from this repository.
+- After cloning Zero123 copy the ***"files_to_replace/predict.py"*** to ***"zero123/zero123"*** directory.
 
 **To execute the pipeline**
 ```
