@@ -34,3 +34,6 @@ Note:
 ```
 python run.py --image ./path/to/your/image.jpg --class "desired-object-class" --azimuth +72 --polar +0
 ```
+
+## Report
+[View the report (report.pdf)](./Report.pdf)
