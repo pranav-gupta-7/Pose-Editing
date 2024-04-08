@@ -15,14 +15,22 @@ The following models are integral to the functionality of this project:
 
 Follow these steps to set up the environment and run the pipeline:
 
-```bash
+```
 pip install -r requirements.txt
+```
 
 **Clone the GroundedSAM and Zero123 repositories into the specified directories within this project:**
 
+```
 git clone <GroundedSAM-Repository-URL> GroundedSAM
 git clone <Zero123-Repository-URL> Zero123
+```
+
+Note: 
+- After cloning GroundedSAM replace the original "grounded_sam_demo.py" with "files_to_replace/grounded_sam_demo.py" from this repository.
+- After cloning Zero123 copy the "files_to_replace/predict.py" to "zero123/zero123" directory.
 
 **To execute the pipeline**
+```
 python run.py --image ./path/to/your/image.jpg --class "desired-object-class" --azimuth +72 --polar +0
-
+```
